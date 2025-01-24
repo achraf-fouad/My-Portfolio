@@ -48,7 +48,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(../img/me2.png) no-repeat;
+    background: url(./img/me2.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -216,4 +216,48 @@ opacity: 0.9;
 .footer .social-icons a{
  font-size: 1.3em;
  padding: 0 12px 0 0;
+}
+
+
+@media (max-width:1023px) {
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+        font-size: 1em;
+    }
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+    content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:641px) {
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px) {
+    body{
+        font-size: 10px;
+    }
 }
